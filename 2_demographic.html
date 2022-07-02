@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="workflowpage.css">
+	</head>
+
+	<body style="font-family: Modern;padding: 100px">
+	<h1 class="title">Please tell us a bit about yourself.&ensp;&ensp;</h1>
+
+	<form method="post" style="margin-top: 20px;" action="3_instructionTutorial.php">
+
+		<label class="subtitle">Biological Sex</label>
+				<br>
+				<label><input type="radio" name="gender" value="Male" required>Male</label>
+				<br>
+				<label><input type="radio" name="gender" value="Female">Female</label>
+			  <br>
+			  <br>
+				<br>
+
+		<label class="subtitle">How old are you (Please type a number)?</label>
+				<input id="age" name="age" style="width: 50px;" type="number" min="0" max="120" value="" required>
+				<br>
+				<br>
+
+
+		<label class="subtitle">Which of the following best describes your current or last occupation (or major, if you are a student)?</label>
+				<br>
+					<label><input type="radio" name="occupation" value="Architecture" required>Architecture and Construction</label>
+					<br>
+					<label><input type="radio" name="occupation" value="Arts">Arts, Audio/Video Technology and Communications</label>
+				  <br>
+				  <label><input type="radio" name="occupation" value="Business">Business Management and Administration</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Education">Education and Training</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Finance">Finance</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Government">Government and Public Administration</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Health">Health Science</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="HumanServices">Human Services</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Information">Information Technology</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Law">Law, Public Safety, Corrections and Security</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Marketing">Marketing, Sales and Service</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="ScienceTechnology">Science, Technology, Engineering and Mathematics</label>
+			    <br>
+					<label><input type="radio" name="occupation" value="Transportation">Transportation, Distribution and Logistics</label>
+			    <br>
+			    <br>
+				<br>
+
+				<!-- <label class="subtitle">Which operating system of mobile do you frequently use?</label>
+				<br>
+					<label><input type="radio" name="mobileSystem" value="Android" required>Android</label>
+					<br>
+					<label><input type="radio" name="mobileSystem" value="iOS">iOS</label>
+					<br>
+				<br>
+				<br> -->
+
+		<input id="uid" name="uid" value="" hidden>
+		<input class="bluebutton" type="submit" value="Click here to see tutorial">
+	</form>
+
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+	<script src="js/2_demo.js"></script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>Introduction of Task</title>
+	<link rel="stylesheet" href="workflowpage.css">
+</head>
+
+<body style="font-family: Modern;padding: 100px;">
+
+	<h1 class="title">Rating Icons</h1>
+
+	<div >
+		<p class="subtitle">What will you have to do?<br>
+		<span style="font-weight: normal">You will first fill in a questionnaire about some basic demographic information. Then, you will need to rate 25 graphic icons according to the different design features.
+		</span>
+		</p>
+	</div>
+
+	<div >
+		<p class="subtitle">We will <label class="highlight">reject</label> the workers:<br>
+		<span style="font-weight: normal">
+		- Give the same rating score for over 90% of all icons<br>
+		- Answer with consistent patterns <br>
+		- Fail to pass quality control questions for 3 times or more than 3 times<br>
+		</span>
+
+	</div>
+
+	<div >
+		<p class="subtitle">Precautions:<br>
+		<span style="font-weight: normal">
+  	 	This task needs a good Internet connection to provide a smooth experience.<br>
+  	 	Please <label class="highlight">do not use the browser's go-back button</label> during the rating procedure to avoid the crash of the website.<br>
+		</span>
+		</p>
+	</div>
+
+	<div >
+		<p class="subtitle">Privacy and Data Collection:<br>
+		<span style="font-weight: normal">Any data that we collect will be securely stored on our servers.</span>
+		</p>
+	</div>
+
+	<div >
+		<p class="subtitle">Duration: <br>
+		<span style="font-weight: normal">Approximately 5 minutes.</span>
+		</p>
+	</div>
+
+	<form method="post" action="2_demographic.html">
+		<input name="agree" type="submit" class="bluebutton" value="Click here to agree and continue">
+	</form>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+		  apiKey: "AIzaSyCRY3WliLoqO6JYSHwivDrzAyI5OHvr_fU",
+		  authDomain: "exp1-watchvideo.firebaseapp.com",
+		  databaseURL: "https://exp-iconrating-3.firebaseio.com/",
+		  projectId: "exp1-watchvideo",
+		  storageBucket: "exp1-watchvideo.appspot.com",
+		  messagingSenderId: "13982835731",
+		  appId: "1:13982835731:web:dccc1e296f0fe6faee8be6"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+	  </script>
+</body>
+</html>
